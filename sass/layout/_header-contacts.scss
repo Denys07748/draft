@@ -1,0 +1,73 @@
+.contacts {
+    margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }  
+
+    @media screen and (min-width: $desktop) {
+        @include flex-center;
+    }
+
+    &__item:not(:last-child) {
+        @media screen and (min-width: $desktop) {
+            margin-right: 30px;
+        }
+    }
+
+    &__link {
+        @include font(500, 12px, 1.17, 0.02em);
+
+        &--first {
+            @media screen and (max-width: 1199px) {
+                padding-top: 20px;
+                padding-bottom: 5px;
+            }
+        }
+
+        &--second {
+            @media screen and (max-width: 1199px) {
+                padding-top: 5px;
+                padding-bottom: 20px;
+            }
+        }
+
+        @media screen and (min-width: $desktop) {
+            @include font(500, 14px, 1.17, 0.02em);
+            @include flex-center;
+        }
+    }
+
+    &__icon {
+        margin-right: 8px;
+        fill: currentColor;
+
+        @media screen and (max-width: 767px) {
+           display: none;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-right: 10px;
+        }
+
+        &--wide { 
+            width: 14px;
+            height: 10px;
+            
+            @media screen and (min-width: $desktop) {
+                width: 16px;
+                height: 12px;
+            }
+        }
+
+        &--narrow { 
+            width: 10px;
+            height: 14px;
+            
+            @media screen and (min-width: $desktop) {
+                width: 10px;
+                height: 16px;
+            }
+        }
+    }
+} 

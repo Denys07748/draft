@@ -1,0 +1,30 @@
+.logo {
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    @include font(700, 24px, 1.17);
+
+    @media screen and (max-width: 1279px) {
+        margin-right: auto;
+    }
+
+}
+
+// .logo__header {
+//     @media screen and (max-width: 767px) {
+//         padding-top: 16px;
+//         padding-bottom: 16px;
+//     }
+// }
+
+// .logo__header--black {
+//     color: var(--header-logo-color);
+// }
+
+// .logo__footer {
+//     display: block;
+//     margin-bottom: 20px;  
+// }
+
+// .logo__footer--white {
+//     color: var(--primery-bg-color);
+// }

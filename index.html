@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+    <!--Шапка-->
+        <header class="header">
+        <div class="header__container container">
+            <a href="/" class="logo link">
+                icecream
+            </a>
+
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg  class="menu-toggle__icon-menu" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use href="images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+
+                <nav class="header__nav">
+                    <ul class="header__list list">
+                        <li class="header__item"> <a href="/" class="header__link header__link--current link">Home</a></li>
+                        <li class="header__item"> <a href="" class="header__link link">About us</a></li>
+                        <li class="header__item"> <a href="#how-its-made" class="header__link link">How it’s made?</a></li>
+                        <li class="header__item"> <a href="#products" class="header__link link">Our products</a></li>
+                        <li class="header__item"> <a href="#contact" class="header__link link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" class="header__button button">Buy now</button>
+        </div>
+
+        
+
+        <!--Мобильное меню-->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button type="button" class="menu-toggle js-close-menu">
+                <svg class="menu-toggle__icon-cross" width="40" height="40">
+                    <use href="./images/icons.svg#icon-close_40px"></use>
+                </svg>
+            </button>
+
+            <button type="button" class="menu-container__button button">Buy now</button>
+
+            <ul class="mobile-nav list">
+                <li class="mobile-nav__item"> <a href="/" class="mobile-nav__link mobile-nav__link--current link">Home</a></li>
+                <li class="mobile-nav__item"> <a href="" class="mobile-nav__link link">About us</a></li>
+                <li class="mobile-nav__item"> <a href="#how-its-made" class="mobile-nav__link link">How it’s made?</a></li>
+                <li class="mobile-nav__item"> <a href="#products" class="mobile-nav__link link">Our products</a></li>
+                <li class="mobile-nav__item"> <a href="" class="mobile-nav__link link">Contact</a></li>
+            </ul>
+
+        </div>
+        </header>
+
+        <!--Герой-->
+            <!-- <div class="hero__container container">
+                <h1 class="hero__title title">ice cream made with <span>passion</span></h1>
+                
+               <ul class="hero-btn list">
+                   <li class="hero-btn__item"><a href="#products" class="hero-btn__link">Products</a></li>
+                   <li class="hero-btn__item"><a href="#how-its-made" class="hero-btn__link">How it’s made?</a></li>
+               </ul>
+
+               <ul class="hero__list list">
+                   <li class="hero__item">
+                       <p class="hero__number"><span class="hero__text hero__text--smaller"></span></p>
+                   </li>
+                   <li class="hero__item">
+                    <p class="hero__number"><span class="hero__text hero__text--smaller"></span></p>
+                    </li>
+               </ul>
+
+               <div>
+                   <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <button class="hero__button" type="button"></button>
+                </div>
+
+
+            </div>
+    </section> -->
+
+
+
+    <script defer src="./js/mobile-menu.js"></script>
+</body>

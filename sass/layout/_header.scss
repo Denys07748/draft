@@ -1,0 +1,60 @@
+// .header {
+//     border-bottom: 1px solid #ECECEC;
+
+//     &__container,
+//     &__nav {
+//         @include flex-center;
+//     }
+
+//     &__container {
+//         @media screen and (max-width: 767px) {
+//             @include flex-center ($jc:space-between);
+//         }   
+//     }
+
+//     &__nav {
+//         @media screen and (max-width: 767px) {
+//             display: none;
+//         }  
+//     }
+
+//     &__list {
+//         @include flex-center;
+//         margin-left: 88px;
+//         color: var(--title-text-color);
+
+//         @media screen and (min-width: $desktop) {
+//             margin-left: 93px;
+//         } 
+//     }
+
+//     &__item:not(:last-child) {
+//         margin-right: 50px;
+//     }
+// }
+
+// .header__link {
+//     position: relative;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     transition: color var(--transit-time) var(--timing-function);
+//     @include font(500, 14px, 1.14, 0.02em);
+
+//         &--current::after {
+//                 position: absolute;
+//                 display: block;
+//                 left: 0;
+//                 bottom: -1px;
+//                 content: "";
+//                 height: 4px;
+//                 width: 100%;
+//                 background-color: currentColor;
+//                 border-radius: 2px;
+//             }
+    
+//     &:hover,
+//     &:focus,
+//     &--current {
+//         color: var(--accent-color);
+//     }
+// }

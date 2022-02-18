@@ -1,0 +1,35 @@
+.team {
+    @include font(null, 16px, 1.18);
+    text-align: center;
+    background-color: var(--additional-bg-color);
+
+    @media screen and (min-width: $tablet) {
+        --card-item: 2;
+    }
+
+    @media screen and (min-width: $desktop) {
+        --card-item: 4;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        @include font(500, 16px, 1.18);
+        color: var(--title-text-color);
+    }
+       
+    &__item {
+        background-color: var(--primery-bg-color);
+        padding-bottom: 24px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+        @media screen and (min-width: $desktop) {
+           padding-bottom: 30px;
+        }
+    }
+    
+    &__foto {
+        margin-bottom: var(--card-gap);
+    }       
+}
+

@@ -1,0 +1,54 @@
+.footer__form {
+
+    @media screen and (min-width: $desktop) {
+        margin-left: auto;
+     }
+   
+}
+
+.footer__input {
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    @include font(null, 16px, 1.25);
+    background-color: inherit;
+    color: var(--primery-bg-color);
+    transition: border var(--transit-time) var(--timing-function);
+
+    &::placeholder {
+        color: var(--address-color);
+    }
+
+    &:focus,
+    &:hover {
+        border: 1px solid var(--accent-color);
+    }
+
+    @media screen and (max-width: 1199px) {
+        width: 100%;
+        max-width: 450px;
+    } 
+
+    @media screen and (min-width: $desktop) {
+       min-width: 358px;
+    }
+}
+
+.footer__button {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 29px;
+    padding-right: 62px;
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 12px;
+        margin-top: 0;
+     }
+}
+
+.footer__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+} 
